@@ -11,6 +11,11 @@ A **2D Bounce/Paddle Game** written in **C++20** using **SFML 3**, built with **
 
 ---
 
+### Screenshot 
+<p align="center">
+  <img src="screenshots/bounce.png" width="600" title="Gameplay Preview">
+</p>
+
 ### 🧱 Project Structure
 
 ```text
