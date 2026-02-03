@@ -1,5 +1,9 @@
 # 🟣 SFML Bounce Game
 
+![C++](https://img.shields.io/badge/C%2B%2B-20-blue?style=for-the-badge&logo=c%2B%2B)
+![SFML](https://img.shields.io/badge/SFML-3.0-brightgreen?style=for-the-badge)
+![CMake](https://img.shields.io/badge/CMake-Building-064F8C?style=for-the-badge&logo=cmake)
+
 A **2D Bounce/Paddle Game** written in **C++20** using **SFML 3**, built with **CMake**.  
 
 ---
@@ -33,30 +37,3 @@ sfml-bounce-game/
 │   ├── Random.cpp
 │   └── Stats.cpp
 └── CMakeLists.txt        # Build Configuration
-
-## 🐧 Build & Run on Linux
-
-### 1️⃣ Install SFML 3
-
-Ubuntu/Debian:
-
-```bash
-sudo apt install libsfml3-dev
-mkdir build
-cd build
-cmake ..
-make
-./BounceGame
-
-
-
-
-
-
-## 🐧 Build & Run on Windows
-
-mkdir build
-cd build
-cmake -G "MinGW Makefiles" ..
-mingw32-make
-BounceGame.exe
