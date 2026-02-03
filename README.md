@@ -37,3 +37,27 @@ sfml-bounce-game/
 │   ├── Random.cpp
 │   └── Stats.cpp
 └── CMakeLists.txt        # Build Configuration
+
+<details>
+<summary>🖥️ Linux Installation Guide</summary>
+
+```bash
+# 🟣 SFML Bounce Game - Linux Installation
+
+## 1. Install dependencies
+sudo apt update
+sudo apt install build-essential cmake libsfml-dev git
+
+## 2. Clone the project
+git clone <your-repo-url> sfml-bounce-game
+cd sfml-bounce-game
+
+## 3. Build the project
+mkdir build
+cd build
+cmake ..
+make
+
+## 4. Run the game
+./sfml-bounce-game
+
