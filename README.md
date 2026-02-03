@@ -36,8 +36,32 @@ sfml-bounce-game/
 │   ├── Paddle.cpp
 │   ├── Random.cpp
 │   └── Stats.cpp
-```
 └── CMakeLists.txt         # Build Configuration
+
+```
+Linux Installation
+
+## 1. Install dependencies
+```text
+sudo apt update
+sudo apt install build-essential cmake libsfml-dev git
+```
+
+## 2. Clone the project
+```text
+git clone <your-repo-url> sfml-bounce-game
+cd sfml-bounce-game
+```
+
+## 3. Build the project and run the Game 
+```text
+mkdir build
+cd build
+cmake ..
+make
+./sfml-bounce-game
+```
+
 
 
 
