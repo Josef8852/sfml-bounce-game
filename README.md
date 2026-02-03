@@ -23,7 +23,7 @@ sfml-bounce-game/
 │   ├── Game.h
 │   ├── GameConfig.h
 │   ├── GameSounds.h
-│   ├── Paddle.h└── CMakeLists.txt        # Build Configuration
+│   ├── Paddle.h
 │   ├── Random.h
 │   └── Stats.h
 ├── src/                  # Source files (.cpp)
