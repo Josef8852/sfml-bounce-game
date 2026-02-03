@@ -36,7 +36,7 @@ sfml-bounce-game/
 │   ├── Paddle.cpp
 │   ├── Random.cpp
 │   └── Stats.cpp
-...
+```
 └── CMakeLists.txt         # Build Configuration
 
 
