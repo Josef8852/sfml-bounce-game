@@ -7,7 +7,6 @@ A **2D Bounce/Paddle Game** written in **C++20** using **SFML 3**, built with **
 ## 🧱 Project Structure
 
 sfml-bounce-game/
-│
 ├── assets/ # Game assets
 │ ├── background.png
 │ ├── Montserrat-Light.ttf
@@ -36,7 +35,6 @@ sfml-bounce-game/
 │ └── Stats.cpp
 │
 └── CMakeLists.txt # CMake build configuration
-
 
 
 ## 🐧 Build & Run on Linux
