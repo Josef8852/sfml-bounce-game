@@ -40,6 +40,5 @@ sfml-bounce-game/
 └── CMakeLists.txt         # Build Configuration
 
 
-ddd
 
 
