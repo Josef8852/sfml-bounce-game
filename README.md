@@ -63,6 +63,30 @@ make
 ```
 
 
+# Windows Installation
+
+## 1. Install dependencies (example for MSYS2/MinGW)
+```text
+pacman -Syu
+pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake mingw-w64-x86_64-sfml git
+```
+## 2. Clone the project
+```text
+git clone https://github.com/Josef8852/sfml-bounce-game sfml-bounce-game
+cd sfml-bounce-game
+```
+## 3. Create build directory
+```text
+mkdir build
+cd build
+```
+
+## 4. Configure , build and run
+```text
+cmake ..
+cmake --build . --config Release
+./sfml-bounce-game.exe
+```
 
 
 
