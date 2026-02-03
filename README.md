@@ -1,8 +1,10 @@
 # 🟣 SFML Bounce Game
 
-![C++](https://img.shields.io/badge/C%2B%2B-20-blue?style=for-the-badge&logo=c%2B%2B)
-![SFML](https://img.shields.io/badge/SFML-3.0-brightgreen?style=for-the-badge)
-![CMake](https://img.shields.io/badge/CMake-Building-064F8C?style=for-the-badge&logo=cmake)
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="50" height="50"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" alt="CMake" width="50" height="50"/>
+  <img src="https://www.sfml-dev.org/images/logo.png" alt="SFML" width="50" height="50"/>
+</p>
 
 A **2D Bounce/Paddle Game** written in **C++20** using **SFML 3**, built with **CMake**.  
 
