@@ -1,10 +1,11 @@
-name: CMake on a single platform
+name: CMake + SFML 3 build
+
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 env:
   BUILD_TYPE: Release
@@ -14,20 +15,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Install dependencies
-      run: |
-        sudo apt update
-        sudo apt install -y libx11-dev libxrandr-dev libxcursor-dev libxi-dev libxinerama-dev libxext-dev
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y \
+            build-essential \
+            cmake \
+            pkg-config \
+            libx11-dev \
+            libxrandr-dev \
+            libxcursor-dev \
+            libxi-dev \
+            libxinerama-dev \
+            libxext-dev \
+            libgl1-mesa-dev \
+            libudev-dev \
+            libfreetype-dev \
+            libopenal-dev \
+            libsndfile1-dev
 
-    - name: Configure CMake
-      run: cmake -B ${{github.workspace}}/build -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}}
+      - name: Configure CMake
+        run: |
+          rm -rf ${{ github.workspace }}/build
+          cmake -B ${{ github.workspace }}/build -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }}
 
-    - name: Build
-      run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}}
+    
+      - name: Build
+        run: cmake --build ${{ github.workspace }}/build --config ${{ env.BUILD_TYPE }}
 
-    - name: Test
-      working-directory: ${{github.workspace}}/build
-      run: ctest -C ${{env.BUILD_TYPE}}
-
+      - name: Test
+        working-directory: ${{ github.workspace }}/build
+        run: ctest -C ${{ env.BUILD_TYPE }} --output-on-failure
