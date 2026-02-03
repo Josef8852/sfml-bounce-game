@@ -39,7 +39,7 @@ sfml-bounce-game/
 └── CMakeLists.txt         # Build Configuration
 
 ```
-Linux Installation
+#Linux Installation
 
 ## 1. Install dependencies
 ```text
