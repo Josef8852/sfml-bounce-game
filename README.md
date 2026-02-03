@@ -2,8 +2,9 @@
 
 <p align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" width="50" height="50"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" alt="CMake" width="50" height="50"/>
   <img src="https://www.sfml-dev.org/images/logo.png" alt="SFML" width="120" height="120"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cmake/cmake-original.svg" alt="CMake" width="50" height="50"/>
+
 </p>
 
 A **2D Bounce/Paddle Game** written in **C++20** using **SFML 3**, built with **CMake**.  
