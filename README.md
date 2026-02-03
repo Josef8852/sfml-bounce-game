@@ -4,8 +4,9 @@ A **2D Bounce/Paddle Game** written in **C++20** using **SFML 3**, built with **
 
 ---
 
-## 🧱 Project Structure
+### 🧱 Project Structure
 
+```text
 sfml-bounce-game/
 ├── assets/               # Textures, Fonts, and Audio
 │   ├── background.png
